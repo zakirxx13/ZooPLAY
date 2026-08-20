@@ -116,6 +116,241 @@
             border-color: var(--accent-cyan);
         }
 
+        /* Download Section */
+        .download-box {
+            background: linear-gradient(135deg, #1C2541 0%, #0B132B 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 50px 30px;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: var(--bg-dark-navy);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/zooplay.png" alt="ZooPLAY Logo" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">Download App</a></li>
+                    <li class="nav-item">
+                        <a href="#download" class="btn btn-download px-4 py-2">Get App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge tagline-badge mb-3 px-3 py-2 rounded-pill">
+                        Live Sports Streaming
+                    </span>
+                    <h1 class="display-3 fw-bold mb-3">Stream Every Game.<br><span style="color: var(--accent-cyan);">Every Screen.</span></h1>
+                    <p class="lead text-secondary mb-4">
+                        Watch high-definition live sports anytime, anywhere. Experience zero lag, live stats, and multi-device streaming right at your fingertips.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#download" class="btn btn-download d-flex align-items-center gap-2">
+                            <i class="bi bi-download fs-5"></i> Download App
+                        </a>
+                        <a href="#overview" class="btn btn-outline-custom d-flex align-items-center gap-2">
+                            <i class="bi bi-eye fs-5"></i> App Overview
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero App Screenshot -->
+                <div class="col-lg-6 text-center">
+                    <div class="app-screenshot-wrapper">
+                        <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/home_screen.png" alt="ZooPLAY Home Screen" class="app-screenshot img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Overview / Features Section -->
+    <section id="overview" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold fs-1">App Overview & Features</h2>
+                <p style="color: var(--text-muted);">Everything you need to enjoy unlimited live sports.</p>
+            </div>
+
+            <!-- Screenshots Gallery Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 text-center">
+                    <div class="card card-navy p-3 h-100">
+                        <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/player.png" class="img-fluid rounded-3 mb-3" alt="Player Screen">
+                        <h5 class="fw-bold">HD Live Streaming</h5>
+                        <p class="small" style="color: var(--text-muted);">Watch matches in crisp 1080p and 4K ultra-high definition.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card card-navy p-3 h-100">
+                        <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/screen%202.png" class="img-fluid rounded-3 mb-3" alt="Screen 2">
+                        <h5 class="fw-bold">Real-Time Stats</h5>
+                        <p class="small" style="color: var(--text-muted);">Get instant match analytics, lineups, and score updates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card card-navy p-3 h-100">
+                        <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/screen%203.png" class="img-fluid rounded-3 mb-3" alt="Screen 3">
+                        <h5 class="fw-bold">Multi-Screen Play</h5>
+                        <p class="small" style="color: var(--text-muted);">Cast directly to your Smart TV, tablet, or PC without interruption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5">
+        <div class="container">
+            <div class="download-box text-center">
+                <img src="https://raw.githubusercontent.com/zakirxx13/ZooPLAY/refs/heads/main/zooplay.png" alt="ZooPLAY Logo" class="mb-3" style="height: 60px;">
+                <h2 class="fw-bold fs-1 mb-3">Get ZooPLAY App Now</h2>
+                <p class="mb-4 text-white-50 max-w-600 mx-auto">
+                    Download the official ZooPLAY APK or mobile app today and start streaming your favorite games across all your screens.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <button class="btn btn-download px-4 py-3 d-flex align-items-center gap-2" onclick="downloadApp('Android APK')">
+                        <i class="bi bi-android2 fs-4"></i>
+                        <div class="text-start lh-1">
+                            <span class="d-block small" style="font-size: 0.75rem;">Download Direct</span>
+                            <strong>Android APK</strong>
+                        </div>
+                    </button>
+                    <button class="btn btn-outline-custom px-4 py-3 d-flex align-items-center gap-2" onclick="downloadApp('Google Play Store')">
+                        <i class="bi bi-google-play fs-4"></i>
+                        <div class="text-start lh-1">
+                            <span class="d-block small" style="font-size: 0.75rem;">Get it on</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-secondary">
+        <div class="container">
+            <p class="mb-0" style="color: var(--text-muted);">&copy; <span id="year"></span> ZooPLAY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function downloadApp(platform) {
+            alert('Starting download for ZooPLAY ' + platform + '...');
+        }
+    </script>
+</body>
+</html>
+        .brand-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 140px 0 80px;
+            background: radial-gradient(circle at top right, #1C2541 0%, #0B132B 70%);
+        }
+
+        .tagline-badge {
+            background-color: rgba(0, 240, 255, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        /* App Screenshot Container */
+        .app-screenshot-wrapper {
+            position: relative;
+            display: inline-block;
+            border-radius: 24px;
+            padding: 10px;
+            background: linear-gradient(145deg, #1C2541, #0B132B);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .app-screenshot {
+            border-radius: 16px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Custom Buttons */
+        .btn-download {
+            background-color: var(--text-white);
+            color: var(--bg-dark-navy);
+            font-weight: 700;
+            padding: 12px 28px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: var(--accent-cyan);
+            color: var(--bg-dark-navy);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 240, 255, 0.3);
+        }
+
+        .btn-outline-custom {
+            border: 2px solid var(--text-white);
+            color: var(--text-white);
+            font-weight: 600;
+            padding: 10px 26px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--text-white);
+            color: var(--bg-dark-navy);
+            transform: translateY(-3px);
+        }
+
+        /* Cards & Features */
+        .card-navy {
+            background-color: var(--bg-navy-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card-navy:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-cyan);
+        }
+
         .icon-box {
             font-size: 2.5rem;
             color: var(--accent-cyan);
